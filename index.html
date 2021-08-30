@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
+    <title>Mariane Thomson</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -8,15 +9,23 @@
       content="Web Developer, Software Engineer, JavaScript Enthusiast."
     />
     <link rel="stylesheet" type="text/css" href="Assets/Css/style.css" />
-    <title>Mariane Thomson</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+    />
   </head>
   <!--Metadata with info for responsiveness and some SEO content info-->
 
   <body>
     <header>
-      <h1>Mariane Thomson</h1>
-      <h2>Web Developer, Software Engineer, JavaScript Enthusiast</h2>
+      <!-- Navbar -->
       <nav>
+        <h1>Mariane Thomson</h1>
+        <h2>Web Developer, Software Engineer, JavaScript Enthusiast</h2>
         <menu>
           <li>
             <a href="#about-me">About Me</a>
@@ -47,6 +56,7 @@
           commodi repudiandae repellat saepe in ipsum fugiat fugit dolorum enim
           ratione dignissimos, laborum eos.
         </p>
+        <i class="fa-solid fa-circle-user"></i>
       </article>
       <!--end of article About Me-->
 
@@ -79,8 +89,29 @@
       <!--End of Article Contact Me-->
     </main>
 
-    <footer>
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-center w3-opacity">
+      <div class="w3-xlarge w3-padding-32">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+      </div>
       <p>&copy; 2021 Mariane Thomson</p>
     </footer>
+
+    <script>
+      // Used to toggle the menu on small screens when clicking on the menu button
+      function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+    </script>
   </body>
 </html>
