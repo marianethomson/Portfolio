@@ -1,22 +1,141 @@
 <!DOCTYPE html>
-<head>
-  <meta name="viewport" />
-  <link rel="stylesheet" type="text/css" src="" />
-  <title>Mariane Thomson</title>
-</head>
-<body>
-  <header>
-    <nav>
-      <menu>
-        <li>Education</li>
-        <li>Professional Experience</li>
-        <li>Profile</li>
-        <li>Contact Me</li>
-      </menu>
-    </nav>
-  </header>
-  <main>
-    <article></article>
-  </main>
-  <footer></footer>
-</body>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="Mariane Thomson"
+      content="Web Developer, Software Engineer, JavaScript Enthusiast."
+    />
+    <link rel="stylesheet" type="text/css" href="Assets/Css/style.css" />
+    <title>Mariane Thomson</title>
+  </head>
+
+  <body>
+    <header>
+      <!--Replacing div for header semantic tag-->
+      <h1>Hori<strong id="seo">seo</strong>n</h1>
+      <!--Changing class to id, as there's only one element-->
+      <nav>
+        <!--Replacing div for nav semantic tag-->
+        <menu>
+          <!--Replacing ul for menu tag-->
+          <li>
+            <a href="#search-engine-optimization">Search Engine Optimization</a>
+          </li>
+          <li>
+            <a href="#online-reputation-management"
+              >Online Reputation Management</a
+            >
+          </li>
+          <li>
+            <a href="#social-media-marketing">Social Media Marketing</a>
+          </li>
+        </menu>
+      </nav>
+    </header>
+
+    <figure alt="Meeting at Horiseon"></figure>
+    <!--Replacing div for figure and adding alt description-->
+    <main>
+      <!--Replacing div for main-->
+      <article class="search-engine-optimization">
+        <!--Replacing div for article and using same class style ahead-->
+        <img
+          src="Assets/images/search-engine-optimization.jpg"
+          alt="Search Engine Optimization"
+          class="float-left"
+        />
+        <h2>
+          <a href="#search-engine-optimization">Search Engine Optimization</a>
+        </h2>
+        <p>
+          The dominance of mobile internet use means that users are searching
+          for the right business as they travel, shop, or sit on their couch at
+          home. Search Engine Optimization (SEO) allows you to increase your
+          visibility and find the right customers for your business.
+        </p>
+      </article>
+
+      <article class="search-engine-optimization">
+        <!--Renaming class for reuse and cleaner code/ replacing div for article-->
+        <img
+          src="Assets/images/online-reputation-management.jpg"
+          alt="Online Reputation Management"
+          class="float-right"
+        />
+        <!--Moving alt to img tag and removing id as not used-->
+        <h2>
+          <a href="#online-reputation-management"
+            >Online Reputation Management</a
+          >
+        </h2>
+        <p>
+          The web is full of opinions, and some of these can be negative. Social
+          media allows anyone with an internet connection to say whatever they
+          want about your business. Online Reputation Management gives you the
+          control over what potential customers see when they search for your
+          business.
+        </p>
+      </article>
+
+      <article class="search-engine-optimization">
+        <!--Renaming class for reuse and cleaner code/replacing div for article-->
+        <img
+          src="Assets/images/social-media-marketing.jpg"
+          alt="Social Media Marketing"
+          class="float-left"
+        /><!--Moving alt to img tag and removing id as not used-->
+        <h2><a href="#social-media-marketing">Social Media Marketing</a></h2>
+        <p>
+          Social media continues to have a sizable influence on buying habits.
+          Social media marketing helps you determine which platforms are suited
+          to your brand, using analytics to find the right markets and increase
+          your lead generation.
+        </p>
+      </article>
+    </main>
+
+    <aside>
+      <!--Replacing div for aside-->
+      <section class="benefit">
+        <!--Renaming class for reuse and cleaner code/ Replacing div for section-->
+        <h3>Lead Generation</h3>
+        <img src="Assets/images/lead-generation.png" alt="Lead Generation" />
+        <!--Adding alt to img tag-->
+        <p>
+          Inbound strategies for lead generation require less work for your
+          business, bringing customers directly to your website.
+        </p>
+      </section>
+
+      <section class="benefit">
+        <!--Renaming class for reuse and cleaner code/ Replacing div for section-->
+        <h3>Brand Awareness</h3>
+        <img src="Assets/images/brand-awareness.png" alt="Brand Awareness" />
+        <!--Adding alt to img tag-->
+        <p>
+          Users find your business through paid and organic searches, increasing
+          the search ranking and visibility for your business.
+        </p>
+      </section>
+
+      <section class="benefit">
+        <!--Renaming class for reuse and cleaner code/ Replacing div for section-->
+        <h3>Cost Management</h3>
+        <img src="Assets/images/cost-management.png" alt="Cost Management" />
+        <!--Adding alt to img tag-->
+        <p>
+          As the search ranking for your business increases, your advertising
+          costs decrease, and you no longer need to advertise your page.
+        </p>
+      </section>
+    </aside>
+
+    <footer>
+      <!--Replacing div for aside-->
+      <h2>Made with ❤️️ by Horiseon</h2>
+      <p>&copy; 2019 Horiseon Social Solution Services, Inc.</p>
+    </footer>
+  </body>
+</html>
