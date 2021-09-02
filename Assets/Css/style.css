@@ -17,149 +17,102 @@ html {
   font-size: 62.5%;
 }
 
-body {
-  font-family: "Montserrat", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 2rem;
-  line-height: 1.5;
-  color: var(--link-water);
-  background-color: var(--black-russian);
-  width: 90%;
-  margin: 2rem auto;
-}
-
-/* main {
-  width: 90%;
-  margin: 2rem auto;
-} */
-
-nav {
-  width: 100%;
-}
-
-h1,
 h2,
 h3 {
   font-family: "Lato", Arial, Helvetica, sans-serif;
   margin-bottom: 1rem;
-  color: var(--baby-blue);
-  font-weight: 700;
   line-height: 1.1;
 }
 
 h1 {
-  font-size: 3.75rem;
+  font-family: "Monsetserrat", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 3.75em;
+  color: var(--black-russian);
+  float: left;
+  font-weight: 700;
 }
 
 h2 {
-  font-size: 3.25rem;
+  font-size: 2.5em;
+  color: var(--baby-blue);
+  font-weight: 500;
 }
 
-h3 {
-  font-size: 2.5rem;
+h3,
+a {
+  font-size: 2em;
 }
 
 p {
-  margin-bottom: 1rem;
-}
-
-.article-header {
-  position: relative;
-  margin: -4rem 0 1.5rem 0;
-  padding: 0.5rem 1rem;
-  background-color: var(--outer-space);
-  color: var(--heliotrope);
-  border: 2px solid var(--gin);
-  border-radius: 8px;
-  transition: all 0.5s ease-in-out;
+  font-size: 1.5em;
+  margin-bottom: 1em;
 }
 
 header {
-  width: 100%;
-  margin: 0 auto;
-  padding: 2.5rem;
+  padding: 2em 2em;
   text-align: center;
-}
-
-nav {
-  width: 90%;
-  display: flex;
-  justify-content: space-between;
-  top: 0;
-  background-color: var(--bunker);
-}
-
-.avatar {
-  border-color: #45a29e;
-  border-image: none;
-  border-radius: 50% 50% 50% 50%;
-  border-style: solid;
-  border-width: 10px;
-  height: 200px;
-  width: 200px;
+  background: var(--blue-chill);
+  color: var(--bunker);
   overflow: hidden;
 }
-img {
-  height: 100%;
-  width: 100%;
+
+nav a {
+  float: right;
 }
 
-/* main grid with flexbox, use negative margins to offset the padding on the .card-project */
-.row {
+/* Change the color of links on hover */
+nav a:hover {
+  background-color: var(--baby-blue);
+  color: var(--black-russian);
+}
+
+/* Add a color to the active/current link */
+nav a.active {
+  color: var(--link-water);
+}
+
+main {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  flex-direction: row;
-  margin-left: -1.5rem;
-  margin-right: -1.5rem;
-}
-
-/* mobile-first approach base column width 100% to be reduced in larger screens */
-.container {
-  flex: 1 0 100%;
-  padding: 1.5rem;
-  transition: flex-basis 500ms linear;
-  margin-bottom: 1.5rem;
-}
-.card-header {
-  /* use position and negative margins to move title of card over the card's outline and create an overlap effect */
-  position: relative;
-  margin: -4rem 0 1.5rem 0;
-  padding: 0.5rem 1rem;
-  background-color: var(--outer-space);
-  color: var(--heliotrope);
-  border: 2px solid var(--gin);
-  border-radius: 8px;
-  transition: all 0.5s ease-in-out;
-}
-/* set an outer and inner drop shadow on the card to create a glowing effect on hover */
-.code-card:hover,
-.code-card:hover .card-header {
-  box-shadow: inset 0px 0px 8px var(--blue-chill), 0 0 15px var(--blue-chill);
 }
 
 footer {
-  bottom: 0;
+  padding: 2em;
+  text-align: center;
+  background: var(--blue-chill);
+  color: var(--black-russian);
 }
 
-/* mobile-first approach */
-@media screen and (min-width: 768px) {
-  .container {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-
-  .container:first-child {
-    flex-grow: 1;
-  }
+.row {
+  flex: 4;
+  background-color: var(--bunker);
+  padding: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-/* media query for larger screens */
-@media screen and (min-width: 992px) {
-  header {
-    width: 75%;
-  }
+.container {
+  width: auto;
+  flex: 0 0 40em;
+}
 
-  .container {
-    flex: 0 0 33.333%;
-    max-width: 33.333%;
+.container header {
+  padding: 2em;
+}
+
+.container p {
+  text-align: center;
+}
+
+.container img {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  main,
+  nav {
+    flex-direction: column;
   }
 }
