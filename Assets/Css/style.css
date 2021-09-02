@@ -15,11 +15,11 @@
 html {
   /* set 1rem to 10px */
   font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
 }
 
 h2,
 h3 {
-  font-family: "Roboto", sans-serif;
   margin-bottom: 1rem;
   line-height: 1.1;
 }
@@ -91,6 +91,11 @@ footer {
   flex-flow: row wrap;
   padding: 1rem;
   justify-content: center;
+}
+.column {
+  display: flex;
+  width: 100%;
+  flex-flow: column wrap;
 }
 
 .container {
