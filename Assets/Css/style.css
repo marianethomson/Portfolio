@@ -103,7 +103,7 @@ img {
   width: 100%;
 }
 
-/* create our main grid with flexbox, use negative margins to offset the padding on the .card-column class */
+/* main grid with flexbox, use negative margins to offset the padding on the .card-project */
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -119,22 +119,47 @@ img {
   transition: flex-basis 500ms linear;
   margin-bottom: 1.5rem;
 }
+.card-header {
+  /* use position and negative margins to move title of card over the card's outline and create an overlap effect */
+  position: relative;
+  margin: -4rem 0 1.5rem 0;
+  padding: 0.5rem 1rem;
+  background-color: var(--outer-space);
+  color: var(--heliotrope);
+  border: 2px solid var(--gin);
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+}
+/* set an outer and inner drop shadow on the card to create a glowing effect on hover */
+.code-card:hover,
+.code-card:hover .card-header {
+  box-shadow: inset 0px 0px 8px var(--blue-chill), 0 0 15px var(--blue-chill);
+}
 
 footer {
   bottom: 0;
 }
 
-/*  Extra small devices (phones, 600px and down) */
-/* @media only screen and (max-width: 600px) {...} */
+/* mobile-first approach */
+@media screen and (min-width: 768px) {
+  .container {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/* @media only screen and (min-width: 600px) {...} */
+  .container:first-child {
+    flex-grow: 1;
+  }
+}
 
-/* Medium devices (landscape tablets, 768px and up) */
-/* @media only screen and (min-width: 768px) {...} */
+/* media query for larger screens */
+@media screen and (min-width: 992px) {
+  header {
+    width: 75%;
+  }
 
-/* Large devices (laptops/desktops, 992px and up) */
-/* @media only screen and (min-width: 992px) {...} */
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-/* @media only screen and (min-width: 1200px) {...}  */
+  .container {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+  }
+}
