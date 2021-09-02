@@ -81,12 +81,7 @@ main {
   flex-direction: column;
   flex-wrap: wrap;
   background-color: var(--christalle);
-  flex: 0 0 80em;
-}
-
-aside {
-  flex: 1;
-  padding: 2em;
+  flex: 1 1 80em;
 }
 
 footer {
@@ -117,7 +112,8 @@ footer {
 }
 
 .container img {
-  width: 100%;
+  width: 80%;
+  flex: 1;
 }
 
 @media screen and (max-width: 768px) {
