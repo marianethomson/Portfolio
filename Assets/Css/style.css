@@ -35,17 +35,19 @@ h1 {
 h2 {
   font-size: 2.5em;
   color: var(--baby-blue);
-  font-weight: 500;
+  font-weight: 300;
 }
 
 h3,
 a {
   font-size: 2em;
+  color: var(--link-water);
 }
 
 p {
-  font-size: 1.5em;
+  font-size: 2em;
   margin-bottom: 1em;
+  color: var(--link-water);
 }
 
 header {
@@ -75,6 +77,7 @@ main {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  background-color: var(--black-russian);
 }
 
 footer {
@@ -95,7 +98,7 @@ footer {
 
 .container {
   width: auto;
-  flex: 0 0 40em;
+  flex: 0 0 100em;
 }
 
 .container header {
@@ -115,4 +118,11 @@ footer {
   nav {
     flex-direction: column;
   }
+
+  /*   nav a {
+    width: 3.5em;
+    height: 0.5em;
+    background-color: var(--black-russian);
+    margin: 06em 0;
+  } */
 }
