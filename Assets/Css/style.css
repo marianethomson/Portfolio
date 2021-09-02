@@ -32,11 +32,6 @@ h1 {
   font-weight: 700;
 }
 
-h2 {
-  font-size: 2.5em;
-  color: var(--golden-tainoi);
-}
-
 h3,
 a {
   font-size: 2em;
@@ -94,16 +89,24 @@ footer {
   flex-flow: row wrap;
   padding: 1em;
   justify-content: center;
-  background-color: var(--bunker);
 }
 
 .container {
   flex: 50%;
+  max-width: 80%;
   padding: 1em;
+  border-radius: 1.5em;
+  background-color: var(--bunker);
 }
 
-.container header {
+#about-me,
+#my-work,
+#contact-me,
+#git,
+#linkedin {
   padding: 2em;
+  font-size: 2.5em;
+  color: var(--golden-tainoi);
 }
 
 .container p {
@@ -114,10 +117,9 @@ footer {
 }
 
 .container img {
-  max-width: 45%;
-  max-height: 45%;
   border-radius: 1.5%;
   float: right;
+  flex: 50%;
 }
 
 .avatar img {
