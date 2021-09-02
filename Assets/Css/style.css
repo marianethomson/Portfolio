@@ -1,32 +1,94 @@
-h1,
-h2 {
-  font-family: "Lato", sans-serif;
-  text-align: left;
+:root {
+  --baby-blue: #66fcf1;
+  --blue-chill: #45a29e;
+  --link-water: #c5c6c7;
+  --bunker: #1f2833;
+  --black-russian: #0b0c10;
+}
+
+/* set content highlight color and background */
+::selection {
+  background-color: var(--blue-chill);
+  color: var(--link-water);
+}
+
+html {
+  /* set 1rem to 10px */
+  font-size: 62.5%;
 }
 
 body {
-  background-color: #0b0c10;
-  color: #c5c6c7;
+  font-family: "Montserrat", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+  line-height: 1.5;
+  color: var(--link-water);
+  background-color: var(--black-russian);
+  width: 90%;
+  margin: 2rem auto;
+}
+
+/* main {
+  width: 90%;
+  margin: 2rem auto;
+} */
+
+nav {
+  width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  margin-bottom: 1rem;
+  color: var(--baby-blue);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 3.75rem;
+}
+
+h2 {
+  font-size: 3.25rem;
+}
+
+h3 {
+  font-size: 2.5rem;
 }
 
 p {
-  font-family: "Montserrat", sans-serif;
+  margin-bottom: 1rem;
 }
+
+.article-header {
+  position: relative;
+  margin: -4rem 0 1.5rem 0;
+  padding: 0.5rem 1rem;
+  background-color: var(--outer-space);
+  color: var(--heliotrope);
+  border: 2px solid var(--gin);
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+}
+
+header {
+  width: 100%;
+  margin: 0 auto;
+  padding: 2.5rem;
+  text-align: center;
+}
+
 nav {
+  width: 90%;
   display: flex;
-  width: 100%;
+  justify-content: space-between;
   top: 0;
-  background-color: #45a29e;
+  background-color: var(--bunker);
 }
 
-menu {
-  width: 100%;
-  overflow: hidden;
-  display: inline-block;
-  width: auto;
-}
-
-figure {
+.avatar {
   border-color: #45a29e;
   border-image: none;
   border-radius: 50% 50% 50% 50%;
@@ -40,6 +102,39 @@ img {
   height: 100%;
   width: 100%;
 }
+
+/* create our main grid with flexbox, use negative margins to offset the padding on the .card-column class */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+}
+
+/* mobile-first approach base column width 100% to be reduced in larger screens */
+.container {
+  flex: 1 0 100%;
+  padding: 1.5rem;
+  transition: flex-basis 500ms linear;
+  margin-bottom: 1.5rem;
+}
+
 footer {
   bottom: 0;
 }
+
+/*  Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {...} */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {...} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...}  */
