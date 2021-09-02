@@ -77,11 +77,9 @@ nav a.active {
 }
 
 main {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   background-color: var(--christalle);
-  flex: 1 1 80em;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 footer {
@@ -92,12 +90,15 @@ footer {
 }
 
 .row {
-  flex: 4;
+  display: flex;
+  flex-flow: row wrap;
   background-color: var(--bunker);
   padding: 2em;
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+}
+
+.container {
+  flex: 50%;
 }
 
 .container header {
@@ -112,8 +113,18 @@ footer {
 }
 
 .container img {
-  width: 80%;
-  flex: 1;
+  max-width: 45%;
+  max-height: 45%;
+  border-radius: 1.5%;
+  float: right;
+}
+
+.avatar img {
+  float: left;
+  vertical-align: middle;
+  max-width: 50%;
+  max-height: 50%;
+  border-radius: 50%;
 }
 
 @media screen and (max-width: 768px) {
