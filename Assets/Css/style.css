@@ -1,15 +1,15 @@
 :root {
-  --baby-blue: #66fcf1;
-  --blue-chill: #45a29e;
+  --golden-tainoi: #fec260;
+  --lipstick: #a12568;
+  --christalle: #3b185f;
   --link-water: #c5c6c7;
+  --blackcurrant: #2a0944;
   --bunker: #1f2833;
-  --black-russian: #0b0c10;
 }
 
-/* set content highlight color and background */
 ::selection {
-  background-color: var(--blue-chill);
-  color: var(--link-water);
+  background-color: var(--lipstick);
+  color: var(--bunker);
 }
 
 html {
@@ -19,53 +19,56 @@ html {
 
 h2,
 h3 {
-  font-family: "Lato", Arial, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
   margin-bottom: 1rem;
   line-height: 1.1;
 }
 
 h1 {
-  font-family: "Monsetserrat", Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Saira Stencil One", cursive;
   font-size: 3.75em;
-  color: var(--black-russian);
+  color: var(--golden-tainoi);
   float: left;
   font-weight: 700;
 }
 
 h2 {
   font-size: 2.5em;
-  color: var(--baby-blue);
+  color: var(--golden-tainoi);
   font-weight: 300;
 }
 
 h3,
 a {
   font-size: 2em;
-  color: var(--link-water);
 }
 
 p {
-  font-size: 2em;
-  margin-bottom: 1em;
-  color: var(--link-water);
+  font-size: 1.5em;
 }
 
 header {
   padding: 2em 2em;
   text-align: center;
-  background: var(--blue-chill);
-  color: var(--bunker);
+  background: var(--bunker);
   overflow: hidden;
 }
 
+nav {
+  background-color: var(--lipstick);
+  display: flex;
+  justify-content: flex-end;
+}
+
 nav a {
-  float: right;
+  padding: 1em 1em;
+  color: var(--link-water);
 }
 
 /* Change the color of links on hover */
 nav a:hover {
-  background-color: var(--baby-blue);
-  color: var(--black-russian);
+  background-color: var(--christalle);
+  color: var(--golden-tainoi);
 }
 
 /* Add a color to the active/current link */
@@ -77,14 +80,20 @@ main {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  background-color: var(--black-russian);
+  background-color: var(--christalle);
+  flex: 0 0 80em;
+}
+
+aside {
+  flex: 1;
+  padding: 2em;
 }
 
 footer {
   padding: 2em;
   text-align: center;
-  background: var(--blue-chill);
-  color: var(--black-russian);
+  background: var(--golden-tainoi);
+  color: var(--blackcurrant);
 }
 
 .row {
@@ -96,17 +105,15 @@ footer {
   justify-content: center;
 }
 
-.container {
-  width: auto;
-  flex: 0 0 100em;
-}
-
 .container header {
   padding: 2em;
 }
 
 .container p {
   text-align: center;
+  font-size: 2em;
+  margin-bottom: 1em;
+  color: var(--link-water);
 }
 
 .container img {
