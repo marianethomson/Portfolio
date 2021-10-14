@@ -4,16 +4,18 @@
   <head>
     <!--Metadata Info-->
     <meta charset="UTF-8" />
-    <title>Mariane Thomson</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--Mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
       content="Developer Portfolio, 
     Web Developer, Software Engineer, technology Enthusiast."
     />
+    <link rel="shortcut icon" type="image/x-icon" href="Assets/Images/computer.png" />
     <meta name="author" content="Mariane Thomson" />
-
-    <!--Mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mariane Thomson</title>
+    
 
     <!--External Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,25 +30,30 @@
 
   <!--Begin Body-->
   <body>
-    <header class="avatar">
-      <img src="Assets/Images/IMG_4774.jpg" alt="Mariane Thomson" ></img>
+    <header>
       <h1> Mariane Thomson</h1>
     </header>
-    <!--Header with name and avatar and nav About Me, My Work and Contact Me-->
+    <!--Header with name and nav About Me, My Work and Contact Me-->
     <!-- Navbar -->
     <nav>
-      <a href="#about-me">About Me</a>
+      <a href="#about-me">About</a>
       <a href="#my-work">My Work</a>
       <a href="#contact-me">Contact Me</a>
     </nav>
     <main>
       <!--Article Container-->
       <!--Article About Me - General info about myself and my professional profile-->
-      <article class="row" >
-        <div class="container">
-          <img src="Assets/Images/pexels-maksim-goncharenok-5821029 (1) (1).jpg" alt="About Me" />
-          <h2><a href="#about-me" id="about-me">About Me</a></h2>
-          <p>I am passionate about technology and how it can influence the world. </p>
+      <article class="container">
+        <div class="item">
+          <img src="Assets/Images/IMG_4774.jpg" alt="Mariane Thomson" ></img>
+          <h3>
+            <a href="#about-me"  class="item" id="about-me">About Me</a>
+            <p>I am a Full-Stack Developer with experience in IT Support, Systems Development, Customer Service and Team Management. I use this skill set to build applications focused on the best user experience.</p>
+            <p>I am passionate about technology, innovation and, I am not afraid of big challenges or changes. I left my comfort zone being a Lawyer to start a new career in IT and I love every moment of it. </p>
+            <p>I am a problem-solver by nature, with great attention to detail and strengths in teamwork, negotiation, commitment and creativity. I am used to fast-paced environments with high-performance results.  
+              I have a sharp set of skills for full-stack development of apps with mobile-first approach and a keen eye for design. 
+            </p>
+          </h3>
         </div>
       </article>
       <!--end of article About Me-->
@@ -54,38 +61,49 @@
 
       <!--Article Container-->
       <!--Article My work - My Professional Exp and Projects-->
-      <article class="row" >
-        <div class="container">
-          <img src="Assets/Images/pexels-negative-space-97077.jpg" alt="My Work" />
-          <h2><a href="#my-work" id="my-work">My Work</a></h2>
-          <p>Here is a sample of some my projects.</p>
-
+      <article class="container">
+        <div class="item">
+          <h3>
+            <a href="#my-work" class="item" id="my-work">My Work</a>
+            <p>Here is a sample of some my projects.</p>
+          </h3>
           <!--Project Card Password Generator-->
-          <div class="row">
-            <div class="project">
-              <a href="https://github.com/marianethomson/Password-Generator"><img src="Assets/Images/pexels-pixabay-60504 (1).jpg" alt="Security" class="related-image"></a>
-              <h3>Password Generator</h3>
-              <p>Password Generator using JavaScript.</p>
+          <div class="container project">
+            <div class="item" >
+              <a href="https://github.com/marianethomson/Connectivity"><img src="Assets/Images/pexels-jéshoots-4831 (1).jpg" alt="Entertainment Hub App" class="related-image"></a>
+              <h3><p><a href="https://marianethomson.github.io/Connectivity">Entertainment Hub</a></p>
+                  <p>Application to fetch books and movies reviews.</p>
+                  <p>Role: Team Developer</p>
+                  <p>Tools: HTML, CSS, JavaScript, Bulma, GoogleFonts, NYT Book and Movies API’s</p>
+              </h3>
             </div>
           </div>
           <!--End of Project Card-->
 
           <!--Project Card Code Quiz-->
-          <div class="column">
-            <div class="project">
-              <a href="https://github.com/marianethomson/Code-Quiz"><img src="Assets/Images/pexels-hitesh-choudhary-693859 (1).jpg" alt="Coding" class="related-image"></a>
-              <h3>Code Quiz</h3>
-              <p>Coding is fun.</p>
+          <div class="container project">
+            <div class="item">
+              <a href="https://github.com/marianethomson/weather-forecast"><img src="Assets/Images/pexels-hitesh-choudhary-693859 (1).jpg" alt="Weather Forecast App" class="related-image"></a>
+              <h3>
+                <p><a href="https://marianethomson.github.io/weather-forecast">Weather Forecast</a></p>
+                <p>Application to fetch weather forecast for 5 days.</p>
+                <p>Role: Sole Developer</p>
+                <p>Tools: HTML, CSS, JavaScript, Bootstrap, GoogleFonts, OpenWeather API</p>
+              </h3>
             </div>
           </div>
           <!--End of Project Card-->
-
-          <!--Project Daily Planner-->
-          <div class="column">
-            <div class="project">
-              <a href="https://github.com/marianethomson/Daily-Planner"><img src="Assets/Images/pexels-breakingpic-3299 (1).jpg" alt="To Do" class="related-image"></a>
-              <h3>Daily Planner</h3>
-              <p>Daily Planner for Busy People.</p>
+          
+          <!--Project Card Password Generator-->
+          <div class="container project">
+            <div class="item">
+              <a href="https://github.com/marianethomson/Password-Generator"><img src="Assets/Images/pexels-pixabay-60504 (1).jpg" alt="Security" class="related-image"></a>
+              <h3>
+                <p><a href="https://marianethomson.github.io/Password-Generator/">Password Generator</a></p>
+                <p>Password Generator using JavaScript.</p>
+                <p>Role: Sole Developer</p>
+                <p>Tools: HTML, CSS, JavaScript</p>
+              </h3>
             </div>
           </div>
           <!--End of Project Card-->
@@ -96,12 +114,16 @@
 
       <!--Article Container-->
       <!--Article Contact Me - My Contacts-->
-      <article class="row">
-        <div class="container">
-          <img src="Assets/Images/pexels-jéshoots-4831 (1).jpg" alt="Contact Me"/>
-          <h2><a href="#contact-me" id="contact-me">Contact Me</a></h2>
-          <p>My GitHub: <a href="https://github.com/marianethomson" id="git">GitHub</a></p>
-          <p>My LinkedIn: <a href="https://www.linkedin.com/in/marianethomson/" id="linkedin">LinkedIn</a></p>
+      <article class="container">
+        <div class="item">
+          <img src="Assets/Images/pexels-maksim-goncharenok-5821029 (1) (1).jpg" alt="Contact Me" />
+          <a href="#contact-me" class="item" id="contact-me">Contact Me</a>
+          <h3>
+            <p>My GitHub: <a href="https://github.com/marianethomson" id="git">GitHub</a></p>
+            <p>My LinkedIn: <a href="https://www.linkedin.com/in/marianethomson/" id="linkedin">LinkedIn</a></p>
+            <p>My Resume: <a href="Assets/resume.pdf" id="resume">Resume</a></p>
+
+          </h3>
         </div>
       </article>
       <!--End of Article Contact Me-->
